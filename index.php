@@ -5,13 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="responsive.css">
+
 
 <title>Title</title>
 </head>
@@ -42,14 +39,14 @@
           </div>
           <div class="col-md-4">
             <img class="img-fluid" src="http://170.187.231.66/~mesh16/ wp-content/themes/starter_for_josh_site/images/port2.jpg" alt="woman">
-            <h4 class="title">PORTRAIT</h4>
+            <h4 class="articletitle">PORTRAIT</h4>
             <p class="date">Friday November 2030</p>
             <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more STS scholars are starting to explore and intervene in the arts. This object of study brings new challenges and opportunities that we want to explore in this session. We would like to gather first of all simply new kinds of knowledge arising from STS study of the arts.</p>
             <a class="readmore" href="#">CONTINUE READING</a>
           </div>
           <div class="col-md-4">
             <img class="img-fluid" src="http://170.187.231.66/~mesh16/ wp-content/themes/starter_for_josh_site/images/port3.jpg" alt="woman">
-            <h4 class="title">PORTRAIT</h4>
+            <h4 class="articletitle">PORTRAIT</h4>
             <p class="date">Friday November 2030</p>
             <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more STS scholars are starting to explore and intervene in the arts. This object of study brings new challenges and opportunities that we want to explore in this session. We would like to gather first of all simply new kinds of knowledge arising from STS study of the arts.</p>
             <a class="readmore" href="#">CONTINUE READING</a>
