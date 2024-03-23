@@ -72,4 +72,3 @@
     </div> <!-- container -->
     <?php wp_head(); ?> <!-- very important that this code is added-->
     </header>
-
