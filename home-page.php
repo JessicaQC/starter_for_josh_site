@@ -18,28 +18,29 @@
 
     <section class="container-fluid articlesbg">
       <div class="container">
-        <h3 class="text-center">LATEST ARTICLES</h3>
+      <h3 class="text-center"><?php the_field('titleforarticles'); ?></h3>
+
         <div class="row">
           <div class="col-md-4">
-            <img class="img-fluid" src="http://170.187.231.66/~mesh16/ wp-content/themes/starter_for_josh_site/images/port1.jpg" alt="woman">
-            <h4 class="articletitle">PORTRAIT</h4>
-            <p class="date">Friday November 2030</p>
-            <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more STS scholars are starting to explore and intervene in the arts. This object of study brings new challenges and opportunities that we want to explore in this session. We would like to gather first of all simply new kinds of knowledge arising from STS study of the arts.</p>
-            <a class="readmore" href="#">CONTINUE READING</a>
+            <img class="img-fluid" src="<?php $image = the_field('articleimage');?>" alt="woman">
+            <h4 class="article-title"><?php the_field('articletitle'); ?></h4>
+            <p class="date" ><?php the_field('articledate'); ?></p>
+            <p class="article-p"><?php the_field('articleexcerpt'); ?> </p>
+            <a href="<?php the_field('readmore'); ?>" class="readmore">CONTINUE READING</a>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid" src="http://170.187.231.66/~mesh16/ wp-content/themes/starter_for_josh_site/images/port2.jpg" alt="woman">
-            <h4 class="articletitle">PORTRAIT</h4>
-            <p class="date">Friday November 2030</p>
-            <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more STS scholars are starting to explore and intervene in the arts. This object of study brings new challenges and opportunities that we want to explore in this session. We would like to gather first of all simply new kinds of knowledge arising from STS study of the arts.</p>
-            <a class="readmore" href="#">CONTINUE READING</a>
+          <img class="img-fluid" src="<?php $image = the_field('articleimagemiddle');?>" alt="woman">
+            <h4 class="article-title"><?php the_field('articletitlemiddle'); ?></h4>
+            <p class="date" ><?php the_field('articledatemiddle'); ?></p>
+            <p class="article-p"><?php the_field('articleexcerptmiddle'); ?> </p>
+            <a href="<?php the_field('readmoremiddle'); ?>" class="readmore">CONTINUE READING</a>
           </div>
           <div class="col-md-4">
-            <img class="img-fluid" src="http://170.187.231.66/~mesh16/ wp-content/themes/starter_for_josh_site/images/port3.jpg" alt="woman">
-            <h4 class="articletitle">PORTRAIT</h4>
-            <p class="date">Friday November 2030</p>
-            <p class="article-p">STS has never been shy of seeking new terrains of investigation. More and more STS scholars are starting to explore and intervene in the arts. This object of study brings new challenges and opportunities that we want to explore in this session. We would like to gather first of all simply new kinds of knowledge arising from STS study of the arts.</p>
-            <a class="readmore" href="#">CONTINUE READING</a>
+          <img class="img-fluid" src="<?php $image = the_field('articleimageright');?>" alt="woman">
+            <h4 class="article-title"><?php the_field('articletitleright'); ?></h4>
+            <p class="date" ><?php the_field('articledateright'); ?></p>
+            <p class="article-p"><?php the_field('articleexcerptright'); ?> </p>
+            <a href="<?php the_field('readmoreright'); ?>" class="readmore">CONTINUE READING</a>
           </div>
 
         </div> <!-- row -->
