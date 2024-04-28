@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="Description" content="Enter your description here"/>
-
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@
 
 </head>
 <body>
-    <header class="container-fluid smallpage-bg">
+<header class="container-fluid smallpage-bg" style="background-size:cover; height:40vh; background-image: url(<?php the_field('projectheaderbackgroundimage') ?>);">
         <div class="container">
 
     <nav class="navbar navbar-expand-md navbar-dark">
@@ -49,26 +49,25 @@
         </button>
       
         <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PROJECTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CV</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
-              </li>
-          </ul>
-        </div>
+        <?php 
+
+
+wp_nav_menu( array(
+  'theme_location'  => 'primary',
+  'depth'           => 2, // 1 = no dropdowns, 2 = with dropdowns.
+  'container'       => 'div',
+  'container_class' => 'collapse navbar-collapse',
+  'container_id'    => 'bs-example-navbar-collapse-1',
+  'menu_class'      => 'navbar-nav ml-auto',
+  'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+  'walker'          => new WP_Bootstrap_Navwalker(),
+) );
+
+
+?>
       </nav> 
       <div class="smallpage-tag">
-      <h1 class="smallpage-title">Games Design For the future</h1>
-    </div>
+      <h1 class="smallpage-title"><?php the_field('projectsheadertitle'); ?> </h1>    
     </div> <!-- container -->
     <?php wp_head(); ?> <!-- very important that this code is added-->
     </header>
